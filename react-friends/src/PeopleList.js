@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './PeopleList.css';
 
-const PeopleList = props => {
+export const PeopleList = ({ people }) => {
   return (
     <div className="test" >
-      {props.people.map(person => <div>{person.first_name} {person.last_name}</div>)}
+      {people.map(person => <div>{person.first_name} {person.last_name}</div>)}
     </div>
   )
 }
 
-export default PeopleList;
+//export default PeopleList;
